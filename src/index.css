@@ -19,7 +19,7 @@
 .nav-menu {
   @apply fixed inset-y-0 right-0 bg-gray-800/90 backdrop-blur-sm shadow-xl;
   @apply w-64 transform translate-x-full transition-transform duration-300 ease-in-out;
-  @apply z-50 p-6;
+  @apply z-50 p-6 text-center flex flex-col items-center justify-center;
 }
 
 /* Active state for menu */
@@ -39,9 +39,10 @@
 
 /* Navbar title styles */
 .nav-title {
-  @apply text-white font-semibold text-lg text-center mb-20;
+  @apply text-white font-semibold text-lg text-center;
   @apply transition-all duration-200;
   @apply hover:text-gray-300 cursor-pointer;
+  @apply absolute top-6 left-0 right-0;
 }
 
 /* Active state for navbar title when clicked */
@@ -53,6 +54,12 @@
 /* Social media logos container */
 .social-logos-container {
   @apply flex items-center justify-center gap-4;
+}
+
+/* Social media logos container */
+.social-logos-container {
+  @apply flex items-center justify-center gap-4;
+  @apply absolute bottom-8 left-0 right-0;
 }
 
 /* Individual social media logo */
