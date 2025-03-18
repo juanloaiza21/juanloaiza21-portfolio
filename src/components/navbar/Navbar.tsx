@@ -38,6 +38,7 @@ export default function Navbar() {
             
             {/* navbar */}
             <AnimatePresence>
+
                 <motion.nav 
                     className={`nav-menu ${isToggle ? 'active' : ''}`}
                     initial="hidden"
@@ -45,7 +46,24 @@ export default function Navbar() {
                     exit="hidden"
                     variants={navContainer}
                 >
+                    <div className="nav-title">
+                        Juan Loaiza
+                    </div>
+                    
                     <NavbarItems />
+
+                    {/* Social Media Links */}
+                    <div className="social-logos-container mt-6">
+                        <a href="https://github.com/juanloaiza21" className="social-logo">
+                        <Icon icon="brandico:github" width="40" height="40" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/juan-david-loaiza-reyes-aaab88206/" className="social-logo">
+                            <Icon icon="eva:linkedin-fill" width="40" height="40" />
+                        </a>
+                        <a href="https://www.instagram.com/juanloaiza21/" className="social-logo">
+                            <Icon icon="ph:instagram-logo-bold" width="40" height="40" />
+                        </a>
+                    </div>
                 </motion.nav>
             </AnimatePresence>
         </header>

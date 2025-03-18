@@ -36,3 +36,36 @@
 .nav-overlay.active {
   @apply block;
 }
+
+/* Navbar title styles */
+.nav-title {
+  @apply text-white font-semibold text-lg text-center mb-20;
+  @apply transition-all duration-200;
+  @apply hover:text-gray-300 cursor-pointer;
+}
+
+/* Active state for navbar title when clicked */
+.nav-title.active {
+  @apply text-gray-200 font-bold;
+  @apply scale-[1.02];
+}
+
+/* Social media logos container */
+.social-logos-container {
+  @apply flex items-center justify-center gap-4;
+}
+
+/* Individual social media logo */
+.social-logo {
+  @apply w-8 h-8 text-white opacity-80 transition-all duration-200;
+  @apply hover:opacity-100 hover:scale-110;
+}
+
+/* For different size variations */
+.social-logo-sm {
+  @apply w-6 h-6;
+}
+
+.social-logo-lg {
+  @apply w-10 h-10;
+}
